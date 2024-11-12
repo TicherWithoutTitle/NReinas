@@ -26,7 +26,7 @@ class Pila:
     def desapilar(self)->int:
         if not self.estaVacia():
             x = self.__lista[self.__tope]
-            # self.__lista[self.__tope]=-1
+            self.__lista[self.__tope]=-1
             self.__tope-=1
             self.__cantidad-=1
             return x
